@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:ital,wght@0,100;0,300;0,400;1,200&family=Roboto&display=swap");
 
-
 /* Main Css */
-:root{
-  --main-color : rgb(5, 64, 136);
-  --text-color:rgb(92, 90, 90);
+:root {
+  --main-color: rgb(5, 64, 136);
+  --text-color: rgb(92, 90, 90);
 }
 * {
   margin: 0;
@@ -40,7 +39,7 @@ body {
   width: 250px;
   height: 160px;
   align-items: center;
- 
+
   color: transparent;
 }
 .form {
@@ -83,17 +82,14 @@ footer .navigation ul li a {
  MAIN CSS ENDS HERE
 */
 
-
 /* Media Queries */
-@media only screen and (min-width: 320px ) and (max-width:480px){
-
-/* LOGIN PAGE CSS BEGINS HERE */
-  body{
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* LOGIN PAGE CSS BEGINS HERE */
+  body {
     max-width: 100%;
     height: 100vh;
     background-color: rgb(248, 254, 254);
     overflow-y: scroll;
-    
   }
   #container {
     display: flex;
@@ -106,15 +102,13 @@ footer .navigation ul li a {
     /* border: 1px solid; */
     overflow-y: scroll;
   }
-  .logo{
-   margin-top: 10px;
-    
+  .logo {
+    margin-top: 10px;
   }
-  i{
-   width: 5%;
-   
+  i {
+    width: 5%;
   }
-  input{
+  input {
     border-bottom: 1.5px solid;
     border-top: 0;
     border-left: 0;
@@ -122,10 +116,10 @@ footer .navigation ul li a {
     width: 93%;
     text-transform: none;
   }
-  input::placeholder{
+  input::placeholder {
     font-size: 15px;
   }
-  button{
+  button {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -139,53 +133,147 @@ footer .navigation ul li a {
     background-color: rgb(10, 78, 162);
     color: white;
     border-radius: 10px;
-    
-
   }
-  .questionaire{
+  .questionaire {
     font-size: 12px;
     font-weight: 600;
     color: black;
     margin: 20px;
   }
-  .questionaire span{
+  .questionaire span {
     color: rgb(83, 83, 247);
   }
-  footer{
+  .index-footer {
     background-color: rgb(5, 64, 136);
     height: 50px;
     position: absolute;
     bottom: 0;
     position: fixed;
-    
   }
-  footer .navigation{
+  footer .navigation {
     width: 80%;
     margin: auto;
     padding: 15px;
   }
-  footer .navigation ul{
+  footer .navigation ul {
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  footer .navigation ul li a{
+  footer .navigation ul li a {
     color: white;
     cursor: pointer;
   }
   /* LOGIN PAGE ENDS HERE */
 
-  /* BALANCE PAGE BEGINS HERE */
+  /* ACCOUNT INFO PAGE BEGINS HERE */
 
+  .acc-info-body {
+    overflow: scroll;
+    width: 100vw;
 
+    background-color: rgb(248, 245, 245);
+    /* padding: 10px; */
+  }
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+  }
 
-  /* BALANCE PAGE ENDS HERE */
+  .dashboard i {
+    font-size: 20px;
+    color: white;
+  }
 
+  .account-type {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .account-type h1,
+  h2 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .account-type .account-balance {
+    display: flex;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .account-balance {
+    display: flex;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin: 10px;
+  }
+
+  .transaction-summary {
+    overflow: scroll;
+    height: 300px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .account-summary {
+    overflow: scroll;
+    height: 300px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .quick-buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(207, 202, 202);
+    opacity: 88;
+    z-index: 6666;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 1px;
+  }
+  .main-footer .buttons i {
+    font-size: 20px;
+    padding: 1px;
+  }
+
+  /* ACCOUNT INFO PAGE ENDS HERE */
 
   /*  */
-
 }
-
 
 /* MEDIA QUERYS END HERE */
